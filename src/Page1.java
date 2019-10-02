@@ -284,8 +284,8 @@ public class Page1 extends javax.swing.JFrame {
                             .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(outcomeLbl4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addComponent(option3Btn3)
                                     .addGap(119, 119, 119)
@@ -294,8 +294,8 @@ public class Page1 extends javax.swing.JFrame {
                                     .addComponent(option1Btn3)
                                     .addGap(119, 119, 119)
                                     .addComponent(option2Btn3)))
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(outcomeLbl5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel8)
+                            .addComponent(outcomeLbl5, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(283, 283, 283))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -355,9 +355,8 @@ public class Page1 extends javax.swing.JFrame {
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(option3Btn2)
-                            .addComponent(option4Btn2)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(158, 158, 158)
+                            .addComponent(option4Btn2))
+                        .addGap(18, 18, 18)
                         .addComponent(outcomeLbl4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel8)
@@ -369,9 +368,9 @@ public class Page1 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(option3Btn3)
                             .addComponent(option4Btn3))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(outcomeLbl5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -380,11 +379,13 @@ public class Page1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 188, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 572, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -410,18 +411,21 @@ public class Page1 extends javax.swing.JFrame {
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
         incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl2.setText("Incorrect, try again");
     }//GEN-LAST:event_option1BtnActionPerformed
 
     private void option2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2BtnActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));// TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+outcomeLbl2.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option2BtnActionPerformed
 
     private void option4BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option4BtnActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
         incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl2.setText("Incorrect, try again");
     }//GEN-LAST:event_option4BtnActionPerformed
 
     private void option3BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option3BtnActionPerformed
@@ -433,73 +437,82 @@ public class Page1 extends javax.swing.JFrame {
     private void option1Btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option1Btn1ActionPerformed
         counterCorrect = counterCorrect + 1;
         correctLbl.setText(String.valueOf(counterCorrect));
-        outcomeLbl2.setText("Correct");// TODO add your handling code here:
+        outcomeLbl3.setText("Correct");// TODO add your handling code here:
     }//GEN-LAST:event_option1Btn1ActionPerformed
 
     private void option3Btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option3Btn1ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));        // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl3.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option3Btn1ActionPerformed
 
     private void option4Btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option4Btn1ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));  // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl3.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option4Btn1ActionPerformed
 
     private void option2Btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2Btn1ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));    // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl3.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option2Btn1ActionPerformed
 
     private void option1Btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option1Btn2ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));   // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter)); 
+        outcomeLbl4.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option1Btn2ActionPerformed
 
     private void option3Btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option3Btn2ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));  // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter)); 
+        outcomeLbl4.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option3Btn2ActionPerformed
 
     private void option2Btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2Btn2ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));   // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl4.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option2Btn2ActionPerformed
 
     private void option4Btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option4Btn2ActionPerformed
         counterCorrect = counterCorrect + 1;
         correctLbl.setText(String.valueOf(counterCorrect));
-        outcomeLbl2.setText("Correct");// TODO add your handling code here:  // TODO add your handling code here:
+        outcomeLbl4.setText("Correct");// TODO add your handling code here:  // TODO add your handling code here:
     }//GEN-LAST:event_option4Btn2ActionPerformed
 
     private void option3Btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option3Btn3ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));  // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl5.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option3Btn3ActionPerformed
 
     private void option1Btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option1Btn3ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));   // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl5.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option1Btn3ActionPerformed
 
     private void option2Btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option2Btn3ActionPerformed
         incorrectCounter = incorrectCounter + 1;
         incorrectLbl.setText(String.valueOf(incorrectCounter));
-        incorrectLbl.setText(String.valueOf(incorrectCounter));  // TODO add your handling code here:
+        incorrectLbl.setText(String.valueOf(incorrectCounter));
+        outcomeLbl5.setText("Incorrect, try again");// TODO add your handling code here:
     }//GEN-LAST:event_option2Btn3ActionPerformed
 
     private void option4Btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option4Btn3ActionPerformed
         counterCorrect = counterCorrect + 1;
         correctLbl.setText(String.valueOf(counterCorrect));
-        outcomeLbl2.setText("Correct");// TODO add your handling code here:// TODO add your handling code here:
+        outcomeLbl5.setText("Correct");// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_option4Btn3ActionPerformed
 
     /**
