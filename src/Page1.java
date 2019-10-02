@@ -91,37 +91,37 @@ public class Page1 extends javax.swing.JFrame {
         jLabel4.setText("Incorrect:");
 
         jLabel5.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel5.setText("Q2");
+        jLabel5.setText("Compiled Java source code is called");
 
-        option1Btn.setText("Option 1");
+        option1Btn.setText("Machine code");
         option1Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 option1BtnActionPerformed(evt);
             }
         });
 
-        option3Btn.setText("Option 3");
+        option3Btn.setText("Bytecode");
         option3Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 option3BtnActionPerformed(evt);
             }
         });
 
-        option2Btn.setText("Option 2");
+        option2Btn.setText("Compiled code");
         option2Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 option2BtnActionPerformed(evt);
             }
         });
 
-        option4Btn.setText("Option 4");
+        option4Btn.setText("Source code");
         option4Btn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 option4BtnActionPerformed(evt);
             }
         });
 
-        option1Btn1.setText("Option 1");
+        option1Btn1.setText("Algorithm");
         option1Btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 option1Btn1ActionPerformed(evt);
@@ -150,7 +150,7 @@ public class Page1 extends javax.swing.JFrame {
         });
 
         jLabel6.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
-        jLabel6.setText("Q3");
+        jLabel6.setText("Which is a set of steps that tell how to solve a problem?");
 
         option1Btn2.setText("Option 1");
         option1Btn2.addActionListener(new java.awt.event.ActionListener() {
@@ -235,41 +235,6 @@ public class Page1 extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addComponent(incorrectLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(34, 34, 34))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(option3Btn)
-                                    .addGap(119, 119, 119)
-                                    .addComponent(option4Btn))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(option1Btn)
-                                    .addGap(119, 119, 119)
-                                    .addComponent(option2Btn))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(option3Btn1)
-                                    .addGap(119, 119, 119)
-                                    .addComponent(option4Btn1))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(option1Btn1)
-                                    .addGap(119, 119, 119)
-                                    .addComponent(option2Btn1)))
-                            .addComponent(jLabel6))
-                        .addGap(283, 283, 283))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(outcomeLbl2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(userInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(CheckBtn)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(outcomeLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(364, 364, 364))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -296,7 +261,39 @@ public class Page1 extends javax.swing.JFrame {
                                     .addComponent(option2Btn3)))
                             .addComponent(jLabel8)
                             .addComponent(outcomeLbl5, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(283, 283, 283))))
+                        .addGap(283, 283, 283))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(option3Btn)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(option4Btn))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(option1Btn)
+                                    .addGap(119, 119, 119)
+                                    .addComponent(option2Btn)))
+                            .addComponent(outcomeLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(userInput1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(CheckBtn)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(option1Btn1)
+                                    .addGap(119, 119, 119)
+                                    .addComponent(option2Btn1))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(outcomeLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(option3Btn1)
+                                        .addGap(119, 119, 119)
+                                        .addComponent(option4Btn1))))
+                            .addComponent(jLabel6))
+                        .addGap(149, 149, 149))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -324,26 +321,33 @@ public class Page1 extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(outcomeLbl1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(option2Btn)
+                                    .addComponent(option1Btn))
+                                .addGap(30, 30, 30)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(option4Btn)
+                                    .addComponent(option3Btn))))
+                        .addGap(18, 18, 18)
+                        .addComponent(outcomeLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addGap(28, 28, 28)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(option1Btn1)
-                            .addComponent(option2Btn1)
-                            .addComponent(option2Btn)
-                            .addComponent(option1Btn))
+                            .addComponent(option2Btn1))
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(option3Btn1)
-                            .addComponent(option4Btn1)
-                            .addComponent(option4Btn)
-                            .addComponent(option3Btn))))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(outcomeLbl2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(outcomeLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(option4Btn1))
+                        .addGap(18, 18, 18)
+                        .addComponent(outcomeLbl3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
